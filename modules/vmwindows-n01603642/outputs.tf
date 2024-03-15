@@ -9,7 +9,7 @@ output "windows_vm_hostname" {
   value = azurerm_windows_virtual_machine.windows-VM[*].computer_name
 }
 output "windows_vm_fqdn" {
-  value = azurerm_public_ip.windows-pip[*].fqdn
+  value = values(azurerm_public_ip.windows-pip)[*].fqdn
 }
 output "windows_private_ip_address" {
   value = azurerm_windows_virtual_machine.windows-VM[*].private_ip_address

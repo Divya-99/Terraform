@@ -25,7 +25,7 @@ variable "windows_size" {
 }
 
 variable "windows_name" {
-  default =  "windows-5093"
+  default =  "windows-3642"
 }
 
 variable "win_storage_account_type" {
